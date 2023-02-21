@@ -1,0 +1,28 @@
+.conversation {
+  display: flex;
+  gap: var(--conversation-padding);
+  flex-direction: column;
+  align-items: baseline;
+  padding-top: var(--conversation-padding);
+  width: 100%;
+  flex: 6;
+  overflow-y: auto;
+}
+
+.request,
+.response {
+  background-color: var(--blue-grey);
+  color: white;
+  min-width: 50px;
+  max-width: 80%;
+  flex-shrink: 0;
+}
+
+.request {
+  align-self: flex-end;
+  background-color: var(--carbon-blue);
+}
+
+.response {
+  align-self: flex-start;
+}

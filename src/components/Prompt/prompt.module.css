@@ -1,0 +1,17 @@
+.prompt {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 0;
+  padding-top: var(--conversation-padding);
+  width: 100%;
+}
+
+.submitBtn {
+  margin-left: var(--conversation-padding);
+}
+
+@media (max-width: 600px) {
+  .submitBtn {
+    margin-left: 10px;
+  }
+}

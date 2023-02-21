@@ -1,0 +1,9 @@
+.alert {
+  --alert-margin: 20px;
+
+  position: fixed;
+  top: var(--alert-margin);
+  right: var(--alert-margin);
+  z-index: 2;
+  max-width: calc(100% - (var(--alert-margin) * 2));
+}

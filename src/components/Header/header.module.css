@@ -1,0 +1,12 @@
+.header {
+  border-bottom: 1px solid var(--heading-color);
+}
+
+.header h2 {
+  margin-bottom: 10px;
+  color: var(--heading-color);
+}
+
+.header svg {
+  fill: var(--carbon-blue);
+}
