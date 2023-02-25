@@ -6,6 +6,11 @@
   width: 100%;
 }
 
+.promptInput input {
+  font-size: 16px; /* Disables auto-zoom on focus */
+  border-radius: 0;
+}
+
 .submitBtn {
   margin-left: var(--conversation-padding);
 }

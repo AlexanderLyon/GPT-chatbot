@@ -58,6 +58,7 @@ body {
   justify-content: space-between;
   padding: 2rem;
   height: 100vh;
+  height: 100svh; /* Safari iOS */
   max-height: 100%;
 
   @media (max-width: 600px) {

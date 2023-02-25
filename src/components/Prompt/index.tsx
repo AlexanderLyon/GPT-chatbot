@@ -31,6 +31,7 @@ export const Prompt: React.FC<PromptProps> = ({ loading, disabled, onSubmit }) =
           onChange={(e: any) => {
             setEnteredPrompt(e.target.value);
           }}
+          className={styles.promptInput}
           id="prompt-input"
           placeholder="Enter any question"
           labelText="Enter any question"
