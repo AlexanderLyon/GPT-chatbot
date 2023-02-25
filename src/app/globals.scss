@@ -18,13 +18,18 @@
   --background-end-color: rgb(255, 255, 255);
   --heading-color: var(--blue-grey);
   --body-color: rgb(0, 0, 0);
+  --prompt-input--background: transparent;
+  --prompt-input--background--disabled-light: #f4f4f4;
+  --prompt-input--background--disabled-dark: rgb(37, 37, 37);
+  --prompt-input--border-light: rgb(214, 221, 227);
+  --prompt-input--border-dark: var(--blue-grey);
 }
 
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
   :root {
     --body-color: rgb(255, 255, 255);
-    --background-start-color: rgb(0, 0, 0);
+    --background-start-color: rgb(48, 57, 69);
     --background-end-color: rgb(0, 0, 0);
     --heading-color: white;
   }

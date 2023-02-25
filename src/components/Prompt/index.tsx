@@ -41,14 +41,8 @@ export const Prompt: React.FC<PromptProps> = ({ loading, disabled, onSubmit }) =
           autoComplete="off"
         />
       )}
-      <Button
-        type="submit"
-        kind="tertiary"
-        className={styles.submitBtn}
-        size="lg"
-        disabled={loading}
-      >
-        Submit
+      <Button type="submit" className={styles.submitBtn} size="lg" disabled={loading}>
+        Send
       </Button>
     </Form>
   );

@@ -13,6 +13,7 @@
 .response {
   background-color: var(--blue-grey);
   color: white;
+  min-height: unset;
   min-width: 50px;
   max-width: 80%;
   flex-shrink: 0;

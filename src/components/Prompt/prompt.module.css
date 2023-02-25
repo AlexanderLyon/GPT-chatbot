@@ -6,13 +6,38 @@
   width: 100%;
 }
 
-.promptInput input {
+.promptInput input,
+.promptInput input:disabled {
   font-size: 16px; /* Disables auto-zoom on focus */
+  border: 1px solid var(--prompt-input--border-light);
   border-radius: 0;
+  background: var(--prompt-input--background);
+}
+
+.promptInput input:disabled {
+  background: var(--prompt-input--background--disabled-light);
 }
 
 .submitBtn {
   margin-left: var(--conversation-padding);
+}
+
+@media (prefers-color-scheme: dark) {
+  .promptInput input,
+  .promptInput input:disabled {
+    border-color: var(--prompt-input--border-dark);
+    color: white;
+    -webkit-text-fill-color: unset;
+  }
+
+  .promptInput input:disabled {
+    background: var(--prompt-input--background--disabled-dark);
+    -webkit-text-fill-color: var(--blue-grey);
+  }
+
+  .promptInput input::placeholder {
+    color: var(--blue-grey);
+  }
 }
 
 @media (max-width: 600px) {
